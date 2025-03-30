@@ -1,7 +1,7 @@
-from textnode import TextNode
+from textnode import TextNode, TextType
 
 def main():
-    item = TextNode('blah', 'Normal text', 'https://www.boot.dev')
+    item = TextNode("This is some anchor text", TextType.LINK, "https://www.boot.dev")
     print(item)
 
 main()
